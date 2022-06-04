@@ -46,7 +46,6 @@ div.square {
   border:1px solid black;
 }
 
-
 div.canvas {
   display:flex;
   flex-wrap: wrap;
