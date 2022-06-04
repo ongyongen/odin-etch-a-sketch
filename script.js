@@ -13,7 +13,6 @@ let randomise = false
 // Generate square grids //
 function genSquares() {
     container.removeChild(canvas)
-
     i = 0
     while(i < 256) {
         const square = document.createElement('div')
@@ -26,7 +25,6 @@ function genSquares() {
 function resetCanvas() {
     container.innerHTML = ''
     container.appendChild(canvas)
-
 }
 
 // Generate random colors
@@ -61,14 +59,9 @@ function fillColor(e) {
     }
 }
 
-
+// Trigger events
 genSquaresButton.addEventListener('click', genSquares)
-
 colorPicker.addEventListener('click', setFixedState)
 randomColorPicker.addEventListener('click',setRandomState)
 resetCanvasButton.addEventListener('click', resetCanvas)
-
 document.addEventListener('mouseover', fillColor)
-
-
-
